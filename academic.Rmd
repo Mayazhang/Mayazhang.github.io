@@ -1,0 +1,17 @@
+---
+title: "Academic Background"
+---
+
+### Columbia University Mailman School of Public Health, New York, NY
+
+Master of Science, Biostatistics/Pharmaceutical Statistics Track
+
+Relevant coursework: Data Science, Biostatistical Methods, Pharmaceutical Statistics, Statistical Computing in SAS (Spring 2019), Relational Databases and SQL programming for Research and Data Science (Spring 2019), Bayesian Analysis and Adaptive Designs in Clinical Trials (Spring 2019)
+
+### Sun Yat-sen University (SYSU), Guangzhou, China
+
+Bachelor of Medicine (5-year program), Preventive Medicine
+
+Relevant coursework: Medical Statistics, Pharmacology, Genetics, Epidemiology
+
+Thesis: Association Between Spicy Foods Intake and Lipid Profile in Older Chinese
