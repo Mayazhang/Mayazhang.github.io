@@ -1,0 +1,15 @@
+---
+title: "Hi everyone!"
+---
+
+### Welcome to Xiaoyue's webpage!
+
+My name is Xiaoyue Zhang or you can call me Maya, first year student of Master of Science in Columbia University majoring in Biostatistics. 
+
+Know more about this website, please link to my [about page](about.html).
+
+My academic background is [here](academic.html).
+
+Some research I did is on [research page](research.html).
+
+<img src="images/myself.jpeg" style = "width:100%">

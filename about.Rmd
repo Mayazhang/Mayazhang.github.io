@@ -1,0 +1,15 @@
+---
+title: "About"
+---
+
+### About this site
+
+The main purpose of this website is to get you known more about me, including my education background, research experiences and my life philosophy!
+
+I was born in China and took medicine as my bachelor degree in Sun Yat-sen University. At the moment, I am pursuing master of science in biostatistics in Columbia University in USA. 
+
+I really enjoy traveling around the world. Up to now, I've been to France, Italy, Switzerland, USA, Thiland and Japan as well as lots of provinces in China. I like making friends with different people and share life stories with them. 
+
+There is also a cute dog in my family and I'm definitely a dog-lover. His name is Xiongge, 5 years old and just like other Samoyed, like smiling all the time.
+
+<img src="images/dog_1.jpeg" style = "width:80%">
