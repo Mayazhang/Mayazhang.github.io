@@ -12,4 +12,6 @@ My academic background is [here](academic.html).
 
 Some research I did is on [research page](research.html).
 
+My answers to plotly is [here](plotly_dashboard.html).
+
 <img src="images/myself.jpeg" style = "width:100%">

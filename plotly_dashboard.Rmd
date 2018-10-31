@@ -1,0 +1,72 @@
+---
+title: "plotly"
+author: "Xiaoyue Zhang"
+date: "10/29/2018"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+library(rnoaa)
+library(p8105.datasets)
+data("ny_noaa")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Max temperature VS Min temperature
+
+```{r}
+set.seed(1)
+
+ny_noaa_tidy = ny_noaa %>%
+  janitor::clean_names() %>%
+  separate(date, into = c("year", "month", "day"), sep = "-") %>% 
+  mutate(tmax = as.numeric(tmax), tmin = as.numeric(tmin)) %>% 
+  mutate(prcp = prcp/10, tmax = tmax/10, tmin = tmin/10) %>% 
+  sample_n(300)
+
+ny_noaa_tidy %>% 
+  plot_ly(x = ~tmin, y = ~tmax, type = "scatter", color = ~id, mode = "markers") %>% 
+  layout(xaxis = list(title = "minimum temperature"), 
+         yaxis = list(title = "maximum temperature"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Snowfall distribution in each year
+
+```{r}
+ny_noaa %>%
+  janitor::clean_names() %>%
+  separate(date, into = c("year", "month", "day"), sep = "-") %>% 
+  filter(year %in% c(2000:2010)) %>% 
+  mutate(tmax = as.numeric(tmax), tmin = as.numeric(tmin)) %>% 
+  mutate(prcp = prcp/10, tmax = tmax/10, tmin = tmin/10) %>% 
+  filter(snow > 0, snow < 100) %>% 
+  group_by(year) %>%
+  plot_ly(y = ~snow, color = ~year, type = "box") %>% 
+  layout(xaxis = list(title = "year"), yaxis = list(title = "snowfall"))
+```
+
+### Total precipitation in each year
+
+```{r}
+ny_noaa %>%
+  janitor::clean_names() %>%
+  separate(date, into = c("year", "month", "day"), sep = "-") %>% 
+  mutate(tmax = as.numeric(tmax), tmin = as.numeric(tmin)) %>% 
+  mutate(prcp = prcp/10, tmax = tmax/10, tmin = tmin/10) %>%
+  group_by(year) %>% 
+  summarize(total_prcp = sum(prcp, na.rm = TRUE)) %>% 
+plot_ly(y = ~total_prcp, x = ~year, color = ~year, type = "bar") %>% 
+  layout(xaxis = list(title = "year"), yaxis = list(title = "total precipitation"))
+```
+
