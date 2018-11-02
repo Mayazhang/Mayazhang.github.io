@@ -8,9 +8,7 @@ My name is Xiaoyue Zhang or you can call me Maya, first year student of Master o
 
 Know more about this website, please link to my [about page](about.html).
 
-My academic background is [here](academic.html).
-
-Some research I did is on [research page](research.html).
+My resume is [here](academic.html).
 
 My answers to plotly is [here](plotly_dashboard.html).
 
